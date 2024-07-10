@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    /* background-color:rgba(22, 29, 56, 1); */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bg-img {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/Background.webp");
+    opacity: 0.05;
+    top: 0;
+}
+
+.bg-color {
+    z-index: -2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(11, 21, 45);
+    background: linear-gradient(90deg, rgba(11, 21, 45, 1) 0%, rgba(22, 29, 56, 1) 50%, rgba(11, 21, 45, 1) 100%);
+    background-size: 100% 100%;
+}
+
+.home-parent,
+.faq-parent {
+    color: black;
+}
+
+.faq-parent {
+    text-align: center;
+    width: 80vw;
+    margin-top: 4vh;
+}
+
+.faq-main {
+    border-radius: 15px;
+    background-color: aliceblue;
+    margin-bottom: 5vh;
+}
+
+.faq-head {
+    padding: 4vh 0vw 2vh 0vw;
+    font-weight: 600;
+    font-size: 3vmax;
+}
+
+.faq-qna {
+    padding: 0vh 5vw 5vh 5vw;
+}
+
+.faq-q {
+    font-weight: 600;
+    font-size: 2vmax;
+    text-align: left;
+    padding-top: 3vh;
+
+}
+
+.faq-a {
+    font-weight: 200;
+    font-size: 1.5vmax;
+    text-align: left;
+    padding-top: 1vh;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    position: relative;
+    position: sticky;
+    top: 3vh;
+}
+
+
+nav {
+    justify-content: center;
+    border-bottom: 1px solid;
+    box-shadow: 0px 2px 5px black;
+    width: 70vw;
+    background-color: rgba(245, 245, 245);
+    border-radius: 20px;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-logo {
+    width: 13vmax;
+}
+
+.nav-parent {
+    margin: 1.5vh 0vw 1.5vh 1.5vw;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100vw;
+
+}
+
+.options span:hover {
+    cursor: pointer;
+}
+
+#img-user {
+    width: 2.2vmax;
+}
+
+.options {
+    font-weight: 600;
+}
+
+#login,
+#faq,
+#form-back {
+    position: relative;
+    font-size: 1vmax;
+}
+
+.span-div {
+    margin-right: 1.5vw;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    background: linear-gradient(to bottom, transparent 50%, gold 50%);
+    background-size: 100% 200%;
+    transition: all 0.4s ease;
+    user-select: none;
+    border-bottom: 3px solid gold;
+}
+
+.span-div:hover {
+    background-position: 0% 100%;
+}
+
+.home-parent-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-parent {
+    margin-bottom: 5vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.home-part-1 {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-parent-part {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.home-part-3 {
+    display: flex;
+    gap: 2vw;
+}
+
+.btn-1,
+.btn-2 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: aliceblue;
+    /* Set the background color */
+    background: linear-gradient(to bottom, transparent 50%, gold 50%), aliceblue;
+    background-size: 100% 200%;
+    transition: all 0.4s ease;
+    user-select: none;
+    margin: 10px;
+    display: flex;
+    font-size: 1vmax;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    background-position: 0% 100%;
+    transform: scale(1.05);
+}
+
+#paw,
+#link,
+#back{
+    width: 12px;
+}
+
+#add {
+    width: 20px;
+}
+
+#home-span-1,
+#home-span-2 {
+    font-size: 7vmax;
+    font-weight: 900;
+    color: #cbd5e1;
+}
+
+#home-span-3 {
+    font-size: 1.2vmax;
+    color: gold;
+    text-align: center;
+}
+
+#home-cat {
+    width: 30vmax;
+}
+
+#home-span-2 {
+    color: #64748b;
+}
+
+#heading, #heading-2 {
+    font-size: 2.5vmax;
+    font-weight: 800;
+    padding: 2vh;
+}
+
+#heading-2 {
+    padding: 5vh
+}
+
+#user-post-info {
+    color: white;
+    font-size: 1.5vmax;
+    font-weight: 600;
+    user-select: none;
+}
+
+#user-post {
+    color: black;
+    font-size: 1.5vmax;
+    font-weight: 600;
+    user-select: none;
+    transition: all 0.5s;
+}
+
+#user-post:hover{
+    cursor: pointer;
+    color: #64748b;;
+}
+
+.listings-grandParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.listings-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* repeat 3 columns with equal width */
+    gap: 2vw;
+    justify-items: center;
+}
+
+.post-pt {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-main {
+    background-color: #ffffffa7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2vh;
+    border-radius: 12px;
+}
+
+#moment {
+    width: 27vmax;
+    height: 18vmax;
+    border-radius: 12px;
+    align-self: center;
+    transition: all 0.5s;
+}
+
+#moment:hover {
+    box-shadow: 0px 0px 10px rgba(11, 21, 45, 1);
+    cursor: pointer;
+}
+
+#user,
+#likes,
+#comments,
+.details-user,
+    .details-title {
+    font-size: 1.3vmax;
+}
+
+.info,
+.data,
+.title {
+    justify-content: space-between;
+    margin: 1vh;
+}
+
+.title {
+    font-size: 1.5vmax;
+    font-weight: 900;
+}
+
+#time {
+    align-self: flex-end;
+    font-size: 0.8vmax;
+}
+
+#hearticon {
+    width: 2vmax;
+    transition: all 0.5s ease-in-out;
+    /* Apply transition to heart icon */
+    cursor: pointer;
+}
+
+#commenticon {
+    width: 2.5vmax;
+}
+
+.data-likes,
+.data-comments {
+    display: flex;
+    align-items: center;
+    gap: 1vmin;
+}
+
+#likes img:hover {
+    cursor: pointer;
+}
+
+.gif-animation {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.gif-animation:hover {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.form-parent {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 5vh 30vw 0vw 30vw;
+}
+
+.form {
+    padding: 4vmin;
+    border-radius: 15px;
+    display: flex;
+    background-color: aliceblue;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vmin;
+}
+
+#form-head1 {
+    font-size: 2vmax;
+    font-weight: 800;
+}
+
+#form-head2 {
+    font-size: 1.2vmax;
+    font-weight: 500;
+}
+
+.form-btn1, .form-btn2, .newPost-btn, .edit-btn{
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 800;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: aliceblue;
+    background: linear-gradient(to bottom, transparent 50%, gold 50%), aliceblue;
+    background-size: 100% 200%;
+    transition: all 0.4s ease;
+    user-select: none;
+    display: flex;
+    font-size: 1vmax;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+
+.newPost-btn {
+    padding: 10px 15px;
+}
+
+
+.form-btns {
+    display: flex;
+}
+
+.form-btn1:hover, .form-btn2:hover, .newPost-btn:hover, .edit-btn:hover, .delete-btn:hover {
+    background-position: 0% 100%;
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 800;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: aliceblue;
+    background: linear-gradient(to bottom, transparent 50%, rgb(255, 102, 102) 50%), aliceblue;
+    background-size: 100% 200%;
+    transition: all 0.4s ease;
+    user-select: none;
+    display: flex;
+    font-size: 1vmax;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.form-btn-back {
+    border: 2px solid black;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newPost-btn{
+    position: fixed;
+    z-index: 1;
+    right: 2vw;
+    bottom: 3vh;
+}
+
+.err {
+    color: red;
+    font-size: 1vmax;
+    margin-top: 0.5mvin;
+}
+
+.cardDetails-parent {
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+
+
+.cardDetails-main {
+    background-color: aliceblue;
+    padding: 1vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 14px;
+}
+
+#cardDetail-img {
+    width: 35vw;
+    height: 50vh;
+    border-radius: 14px;
+    box-shadow: 0px 0px 10px rgba(11, 21, 45, 1);
+
+}
+
+.cardDetails-text {
+    flex-direction: column;
+    justify-content: space-;
+    align-items: center;
+    padding: 1vw;
+    height:30vh;
+    width: 25vw;
+}
+
+.details-title {
+    font-weight: 800;
+}
+
+.cardDetails-btns {
+    height: 20vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.span-back {
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    background: linear-gradient(to bottom, transparent 50%, gold 50%);
+    background-size: 100% 200%;
+    transition: all 0.4s ease;
+    user-select: none;
+}
+
+.span-back:hover {
+    background-position: 0% 100%;
+}
+
+
+@media (max-width: 768px) {
+
+    /* body {
+        background-color: lightblue;
+    } */
+    #login,
+    #faq, #form-back {
+        font-size: 1.5vmax;
+    }
+
+    nav {
+        width: 90vw;
+    }
+
+    .home-parent-part {
+        gap: 5vh;
+        justify-content: center;
+    }
+
+    .btn-1,
+    .btn-2,
+    .form-btn1,
+    .form-btn2,
+    .edit-btn,
+    .delete-btn
+    {
+        font-size: 1.6vmax;
+    }
+
+    .listings-parent {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .post-parent {
+        width: 75vw;
+    }
+
+    .listings-parent {
+        gap: 3vh;
+    }
+
+    #moment {
+        width: 69vw;
+    }
+
+    #hearticon {
+        width: 2.5vmax;
+    }
+
+    #commenticon {
+        width: 2.6vmax;
+    }
+
+    .info,
+    .data,
+    .title {
+        justify-content: space-between;
+        margin: 0.6vh;
+    }
+
+    #user,
+    #likes,
+    #comments,
+    .details-user,
+    .details-title
+    {
+        font-size: 1.6vmax;
+    }
+
+    .post-main {
+        padding: 1.3vh;
+    }
+
+    #time {
+        align-self: flex-end;
+        font-size: 1vmax;
+    }
+
+    .title {
+        font-size: 1.8vmax;
+        font-weight: 800;
+    }
+
+    .form-main {
+    gap: 5vmin;
+
+    }
+
+    .form-parent {
+        padding: 10vh 10vw 0vw 10vw;
+    }
+
+.cardDetails-main {
+    margin: 10vw;
+    padding: 3vw;
+}
+
+    #cardDetail-img {
+        width: 90vw;
+    }
+}
